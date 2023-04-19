@@ -1,42 +1,42 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
+  <img height="150" src="https://raw.githubusercontent.com/AbdelrhmanAbuelnile/Tadhkirah-full/master/public/favicon.ico"  />
+</div>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+###
 
-## Setup
+<div align="center">
+  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+</div>
 
-Make sure to install the dependencies:
+###
 
-```bash
-# yarn
-yarn install
+<div align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=AbdelrhmanAbuelnile.AbdelrhmanAbuelnile&"  />
+  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
 
-# npm
-npm install
+</div>
 
-# pnpm
-pnpm install
-```
+###
 
-## Development Server
+<h3 align="left">About the project</h3>
 
-Start the development server on `http://localhost:3000`
+###
 
-```bash
-npm run dev
-```
+<h3 align="left">🔭 Future plans: <br><br>  - adding a quiz system<br><br>  - adding an option to listen to the verses</h3>
 
-## Production
+###
 
-Build the application for production:
+<h4 align="left">🌐 Resources<br><br> - API: https://alquran.cloud/api"</h4>
 
-```bash
-npm run build
-```
+###
 
-Locally preview production build:
+<h3 align="left">🛠 Language and tools</h3>
 
-```bash
-npm run preview
-```
+###
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" height="40" width="52" alt="nuxtjs logo"  />
+</div>
+
+###
