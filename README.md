@@ -10,15 +10,6 @@
 
 ###
 
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=AbdelrhmanAbuelnile.AbdelrhmanAbuelnile&"  />
-  
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-
-</div>
-
-###
-
 <h3 align="left">About the project</h3>
 
 ###
@@ -27,7 +18,7 @@
 
 ###
 
-<h4 align="left">🌐 Resources<br><br> - API: https://alquran.cloud/api"</h4>
+<h4 align="left">🌐 Resources<br><br> - API: https://alquran.cloud/api</h4>
 
 ###
 
@@ -37,6 +28,9 @@
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" height="40" width="52" alt="nuxtjs logo"  />
+  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="40" width="52" alt="tailwindcss logo" />
+          
 </div>
 
 ###
