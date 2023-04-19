@@ -10,19 +10,19 @@
 
 ###
 
-<h3 align="left">About the project</h3>
+<h3 align="center">About the project</h3>
 
 ###
 
-<h3 align="left">🔭 Future plans: <br><br>  - adding a quiz system<br><br>  - adding an option to listen to the verses</h3>
+<h3 align="center">🔭 Future plans: <br><br>  - adding a quiz system<br><br>  - adding an option to listen to the verses</h3>
 
 ###
 
-<h4 align="left">🌐 Resources<br><br> - API: https://alquran.cloud/api</h4>
+<h4 align="center">🌐 Resources<br><br> - API: https://alquran.cloud/api</h4>
 
 ###
 
-<h3 align="left">🛠 Language and tools</h3>
+<h3 align="center">🛠 Language and tools</h3>
 
 ###
 
