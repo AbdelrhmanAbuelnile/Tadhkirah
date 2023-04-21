@@ -1,11 +1,15 @@
 <template>
-    <div class="w-full bg-cyan-500 grid grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+    <div class="w-full bg-mushafBg flex flex-col flex-1 items-end gap-4 p-4">
       <!-- <div v-for="s in surahs"> -->
         <!-- <Surhas /> -->
       <!-- </div> -->
-      <div v-for="s in surahName" :key="s" class="card text-center">
-        <NuxtLink :to="`/${s.number}`" class="text-slate-200 hover:text-[#23cfa1] duration-300 font-bold">{{ s.englishName }}</NuxtLink>
-      </div>
+      <NuxtLink :to="`/${s.number}`" v-for="s in surahName" :key="s" class="card text-end w-full flex flex-row-reverse justify-between px-4 lg:px-16 text-slate-200 hover:text-[#23cfa1] duration-300 ">
+        <p class="font-bold">{{ s.name }}</p>
+        <div class="flex flex-row-reverse justify-between max-w-[95px] lg:max-w-[110px] w-full">
+          <p class="text-center">{{ s.ayahs.length }}</p>
+          <p>{{ s.revelationType }}</p>
+        </div>
+      </NuxtLink>
 
     </div>
 </template>

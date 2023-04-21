@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'Light-Cyan': 'hsl(193, 38%, 86%)',
+        'mushafBg': '#FFFBF9',
         'Neon-Green': 'hsl(150, 100%, 66%)',
         'Grayish-Blue': 'hsl(217, 19%, 38%)',
         'Dark-Grayish-Blue': 'hsl(217, 19%, 24%)',

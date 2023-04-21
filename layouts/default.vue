@@ -13,7 +13,7 @@
 
         
         <!-- output the page content -->
-        <div class="w-full min-h-screen h-full bg-cyan-500">
+        <div class="w-full min-h-screen h-full bg-mushafBg">
             <slot />
         </div>
     </div>

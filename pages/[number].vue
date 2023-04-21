@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col justify-center items-center mx-auto lg:w-2/4">
-      <p class="text-center text-4xl pt-2 font-semibold mb-5 text-red-600">{{ surahName.name }}</p>
+    <div class="flex flex-col justify-center items-center mx-auto lg:w-2/4 pt-8 px-4">
+      <p class="text-center text-4xl font-semibold mb-5 text-red-600">{{ surahName.name }}</p>
       <!-- <div v-for="ayah in ayahs" :key="ayah.number" class="flex flex-col justify-center items-center gap-3"> -->
-          <p class="text-2xl text-center font-medium py-4" v-for="ayah in ayahs" :key="ayah.number">{{ ayah.text }}</p>
+          <p class="text-2xl text-center font-medium py-4" v-for="ayah in ayahs" :key="ayah.number">{{ ayah.text }} <span class="text-red-600">{{ ayah.numberInSurah }}</span></p>
       <!-- </div> -->
     </div>
 </template>
