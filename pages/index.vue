@@ -3,13 +3,14 @@
       <!-- <div v-for="s in surahs"> -->
         <!-- <Surhas /> -->
       <!-- </div> -->
-      <NuxtLink :to="`/${s.number}`" v-for="s in surahName" :key="s" class="card text-end w-full flex flex-row-reverse justify-between px-4 lg:px-16 text-slate-200 hover:text-[#23cfa1] duration-300 ">
+      <!-- <NuxtLink :to="`/${s.number}`" v-for="s in surahName" :key="s" class="card text-end w-full flex flex-row-reverse justify-between px-4 lg:px-16 text-slate-200 hover:text-[#23cfa1] duration-300 ">
         <p class="font-bold">{{ s.name }}</p>
         <div class="flex flex-row-reverse justify-between max-w-[95px] lg:max-w-[110px] w-full">
           <p class="text-center">{{ s.ayahs.length }}</p>
           <p>{{ s.revelationType }}</p>
         </div>
-      </NuxtLink>
+      </NuxtLink> -->
+      hi
 
     </div>
 </template>

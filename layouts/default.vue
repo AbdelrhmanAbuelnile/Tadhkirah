@@ -5,6 +5,7 @@
             <NuxtLink to="/" class="font-semibold text-gray-100 hover:text-[#23cfa1] duration-300">Tadhkirah</NuxtLink>
                 <ul class="flex gap-4 text-gray-100">
                     <li><NuxtLink to="/" class="hover:text-[#23cfa1] duration-300">Home</NuxtLink></li>
+                    <li><NuxtLink to="/fehrs" class="hover:text-[#23cfa1] duration-300">Fehrs</NuxtLink></li>
                     <li><NuxtLink to="/randomAyah" class="hover:text-[#23cfa1] duration-300">Random Ayah</Nuxtlink></li>
                         <!-- <li><NuxtLink to="/about" class="hover:text-[#23cfa1] duration-300">about</NuxtLink></li> -->
                 </ul>

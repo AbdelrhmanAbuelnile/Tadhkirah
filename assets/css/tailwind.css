@@ -12,6 +12,6 @@ body {
     }
 
     .card {
-        @apply px-2 py-4 rounded-md bg-Dark-Grayish-Blue shadow-lg h-full;
+        @apply px-2 py-2 rounded-md shadow-lg h-full;
     }
 }
