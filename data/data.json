@@ -1,0 +1,700 @@
+[
+    {
+        "data": {
+            "surahs": [
+                {
+                    "number": 1,
+                    "name": "الفاتحة",
+                    "englishName": "Al-Faatiha",
+                    "link": "/1"
+                },
+                {
+                    "number": 2,
+                    "name": "البقرة",
+                    "englishName": "Al-Baqarah",
+                    "link": "/2"
+                },
+                {
+                    "number": 3,
+                    "name": "ءال عمران",
+                    "englishName": "Aal-E-Imran",
+                    "link": "/3"
+                },
+                {
+                    "number": 4,
+                    "name": "النساء",
+                    "englishName": "An-Nisa",
+                    "link": "/4"
+                },
+                {
+                    "number": 5,
+                    "name": "المائدة",
+                    "englishName": "Al-Maeda",
+                    "link": "/5"
+                },
+                {
+                    "number": 6,
+                    "name": "الأنعام",
+                    "englishName": "Al-Anaam",
+                    "link": "/6"
+                },
+                {
+                    "number": 7,
+                    "name": "الأعراف",
+                    "englishName": "Al-Araf",
+                    "link": "/7"
+                },
+                {
+                    "number": 8,
+                    "name": "الأنفال",
+                    "englishName": "Al-Anfal",
+                    "link": "/8"
+                },
+                {
+                    "number": 9,
+                    "name": "التوبة",
+                    "englishName": "At-Tawba",
+                    "link": "/9"
+                },
+                {
+                    "number": 10,
+                    "name": "يونس",
+                    "englishName": "Yunus",
+                    "link": "/10"
+                },
+                {
+                    "number": 11,
+                    "name": "هود",
+                    "englishName": "Hud",
+                    "link": "/11"
+                },
+                {
+                    "number": 12,
+                    "name": "يوسف",
+                    "englishName": "Yusuf",
+                    "link": "/12"
+                },
+                {
+                    "number": 13,
+                    "name": "الرعد",
+                    "englishName": "Ar-Rad",
+                    "link": "/13"
+                },
+                {
+                    "number": 14,
+                    "name": "إبراهيم",
+                    "englishName": "Ibrahim",
+                    "link": "/14"
+                },
+                {
+                    "number": 15,
+                    "name": "الحجر",
+                    "englishName": "Al-Hijr",
+                    "link": "/15"
+                },
+                {
+                    "number": 16,
+                    "name": "النحل",
+                    "englishName": "An-Nahl",
+                    "link": "/16"
+                },
+                {
+                    "number": 17,
+                    "name": "الإسراء",
+                    "englishName": "Al-Isra",
+                    "link": "/17"
+                },
+                {
+                    "number": 18,
+                    "name": "الكهف",
+                    "englishName": "Al-Kahf",
+                    "link": "/18"
+                },
+                {
+                    "number": 19,
+                    "name": "مريم",
+                    "englishName": "Maryam",
+                    "link": "/19"
+                },
+                {
+                    "number": 20,
+                    "name": "طه",
+                    "englishName": "Ta-Ha",
+                    "link": "/20"
+                },
+                {
+                    "number": 21,
+                    "name": "الأنبياء",
+                    "englishName": "Al-Anbiya",
+                    "link": "/21"
+                },
+                {
+                    "number": 22,
+                    "name": "الحج",
+                    "englishName": "Al-Hajj",
+                    "link": "/22"
+                },
+                {
+                    "number": 23,
+                    "name": "المؤمنون",
+                    "englishName": "Al-Mumenoon",
+                    "link": "/23"
+                },
+                {
+                    "number": 24,
+                    "name": "النور",
+                    "englishName": "An-Noor",
+                    "link": "/24"
+                },
+                {
+                    "number": 25,
+                    "name": "الفرقان",
+                    "englishName": "Al-Furqan",
+                    "link": "/25"
+                },
+                {
+                    "number": 26,
+                    "name": "الشعراء",
+                    "englishName": "Ash-Shuara",
+                    "link": "/26"
+                },
+                {
+                    "number": 27,
+                    "name": "النمل",
+                    "englishName": "An-Naml",
+                    "link": "/27"
+                },
+                {
+                    "number": 28,
+                    "name": "القصص",
+                    "englishName": "Al-Qasas",
+                    "link": "/28"
+                },
+                {
+                    "number": 29,
+                    "name": "العنكبوت",
+                    "englishName": "Al-Ankabut",
+                    "link": "/29"
+                },
+                {
+                    "number": 30,
+                    "name": "الروم",
+                    "englishName": "Ar-Rum",
+                    "link": "/30"
+                },
+                {
+                    "number": 31,
+                    "name": "لقمان",
+                    "englishName": "Luqman",
+                    "link": "/31"
+                },
+                {
+                    "number": 32,
+                    "name": "السجدة",
+                    "englishName": "As-Sajda",
+                    "link": "/32"
+                },
+                {
+                    "number": 33,
+                    "name": "الأحزاب",
+                    "englishName": "Al-Ahzab",
+                    "link": "/33"
+                },
+                {
+                    "number": 34,
+                    "name": "سباء",
+                    "englishName": "Saba",
+                    "link": "/34"
+                },
+                {
+                    "number": 35,
+                    "name": "فاطر",
+                    "englishName": "Fatir",
+                    "link": "/35"
+                },
+                {
+                    "number": 36,
+                    "name": "يس",
+                    "englishName": "Ya-Sin",
+                    "link": "/36"
+                },
+                {
+                    "number": 37,
+                    "name": "الصافات",
+                    "englishName": "As-Saaffat",
+                    "link": "/37"
+                },
+                {
+                    "number": 38,
+                    "name": "ص",
+                    "englishName": "Sad",
+                    "link": "/38"
+                },
+                {
+                    "number": 39,
+                    "name": "الزمر",
+                    "englishName": "Az-Zumar",
+                    "link": "/39"
+                },
+                {
+                    "number": 40,
+                    "name": "غافر",
+                    "englishName": "Ghafir",
+                    "link": "/40"
+                },
+                {
+                    "number": 41,
+                    "name": "فصلت",
+                    "englishName": "Fussilat",
+                    "link": "/41"
+                },
+                {
+                    "number": 42,
+                    "name": "الشورى",
+                    "englishName": "Ash-Shura",
+                    "link": "/42"
+                },
+                {
+                    "number": 43,
+                    "name": "الزخرف",
+                    "englishName": "Az-Zukhruf",
+                    "link": "/43"
+                },
+                {
+                    "number": 44,
+                    "name": "الدخان",
+                    "englishName": "Ad-Dukhan",
+                    "link": "/44"
+                },
+                {
+                    "number": 45,
+                    "name": "الجاثية",
+                    "englishName": "Al-Jathiya",
+                    "link": "/45"
+                },
+                {
+                    "number": 46,
+                    "name": "الأحقاف",
+                    "englishName": "Al-Ahqaf",
+                    "link": "/46"
+                },
+                {
+                    "number": 47,
+                    "name": "محمد",
+                    "englishName": "Muhammad",
+                    "link": "/47"
+                },
+                {
+                    "number": 48,
+                    "name": "الفتح",
+                    "englishName": "Al-Fath",
+                    "link": "/48"
+                },
+                {
+                    "number": 49,
+                    "name": "الحجرات",
+                    "englishName": "Al-Hujraat",
+                    "link": "/49"
+                },
+                {
+                    "number": 50,
+                    "name": "ق",
+                    "englishName": "Qaf",
+                    "link": "/50"
+                },
+                {
+                    "number": 51,
+                    "name": "الذاريات",
+                    "englishName": "Adh-Dhariyat",
+                    "link": "/51"
+                },
+                {
+                    "number": 52,
+                    "name": "الطور",
+                    "englishName": "At-Tur",
+                    "link": "/52"
+                },
+                {
+                    "number": 53,
+                    "name": "النجم",
+                    "englishName": "An-Najm",
+                    "link": "/53"
+                },
+                {
+                    "number": 54,
+                    "name": "القمر",
+                    "englishName": "Al-Qamar",
+                    "link": "/54"
+                },
+                {
+                    "number": 55,
+                    "name": "الرحمن",
+                    "englishName": "Ar-Rahman",
+                    "link": "/55"
+                },
+                {
+                    "number": 56,
+                    "name": "الواقعة",
+                    "englishName": "Al-Waqia",
+                    "link": "/56"
+                },
+                {
+                    "number": 57,
+                    "name": "الحديد",
+                    "englishName": "Al-Hadid",
+                    "link": "/57"
+                },
+                {
+                    "number": 58,
+                    "name": "المجادلة",
+                    "englishName": "Al-Mujadila",
+                    "link": "/58"
+                },
+                {
+                    "number": 59,
+                    "name": "الحشر",
+                    "englishName": "Al-Hashr",
+                    "link": "/59"
+                },
+                {
+                    "number": 60,
+                    "name": "الممتحنة",
+                    "englishName": "Al-Mumtahina",
+                    "link": "/60"
+                },
+                {
+                    "number": 61,
+                    "name": "الصف",
+                    "englishName": "As-Saff",
+                    "link": "/61"
+                },
+                {
+                    "number": 62,
+                    "name": "الجمعة",
+                    "englishName": "Al-Jumuah",
+                    "link": "/62"
+                },
+                {
+                    "number": 63,
+                    "name": "المنافقون",
+                    "englishName": "Al-Munafiqoon",
+                    "link": "/63"
+                },
+                {
+                    "number": 64,
+                    "name": "التغابن",
+                    "englishName": "At-Taghabun",
+                    "link": "/64"
+                },
+                {
+                    "number": 65,
+                    "name": "الطلاق",
+                    "englishName": "At-Talaq",
+                    "link": "/65"
+                },
+                {
+                    "number": 66,
+                    "name": "التحريم",
+                    "englishName": "At-Tahrim",
+                    "link": "/66"
+                },
+                {
+                    "number": 67,
+                    "name": "الملك",
+                    "englishName": "Al-Mulk",
+                    "link": "/67"
+                },
+                {
+                    "number": 68,
+                    "name": "القلم",
+                    "englishName": "Al-Qalam",
+                    "link": "/68"
+                },
+                {
+                    "number": 69,
+                    "name": "الحاقة",
+                    "englishName": "Al-Haaqqa",
+                    "link": "/69"
+                },
+                {
+                    "number": 70,
+                    "name": "المعارج",
+                    "englishName": "Al-Maarij",
+                    "link": "/70"
+                },
+                {
+                    "number": 71,
+                    "name": "نوح",
+                    "englishName": "Nuh",
+                    "link": "/71"
+                },
+                {
+                    "number": 72,
+                    "name": "الجن",
+                    "englishName": "Al-Jinn",
+                    "link": "/72"
+                },
+                {
+                    "number": 73,
+                    "name": "المزمل",
+                    "englishName": "Al-Muzzammil",
+                    "link": "/73"
+                },
+                {
+                    "number": 74,
+                    "name": "المدثر",
+                    "englishName": "Al-Muddathir",
+                    "link": "/74"
+                },
+                {
+                    "number": 75,
+                    "name": "القيامة",
+                    "englishName": "Al-Qiyama",
+                    "link": "/75"
+                },
+                {
+                    "number": 76,
+                    "name": "الإنسان",
+                    "englishName": "Al-Insan",
+                    "link": "/76"
+                },
+                {
+                    "number": 77,
+                    "name": "المرسلات",
+                    "englishName": "Al-Mursalat",
+                    "link": "/77"
+                },
+                {
+                    "number": 78,
+                    "name": "النبأ",
+                    "englishName": "An-Naba",
+                    "link": "/78"
+                },
+                {
+                    "number": 79,
+                    "name": "النازعات",
+                    "englishName": "An-Nazi'at",
+                    "link": "/79"
+                },
+                {
+                    "number": 80,
+                    "name": "عبس",
+                    "englishName": "Abasa",
+                    "link": "/80"
+                },
+                {
+                    "number": 81,
+                    "name": "التكوير",
+                    "englishName": "At-Takwir",
+                    "link": "/81"
+                },
+                {
+                    "number": 82,
+                    "name": "الإنفطار",
+                    "englishName": "Al-Infitar",
+                    "link": "/82"
+                },
+                {
+                    "number": 83,
+                    "name": "المطففين",
+                    "englishName": "Al-Mutaffifin",
+                    "link": "/83"
+                },
+                {
+                    "number": 84,
+                    "name": "الإنشقاق",
+                    "englishName": "Al-Insyiqaaq",
+                    "link": "/84"
+                },
+                {
+                    "number": 85,
+                    "name": "البروج",
+                    "englishName": "Al-Buruj",
+                    "link": "/85"
+                },
+                {
+                    "number": 86,
+                    "name": "الطارق",
+                    "englishName": "At-Tariq",
+                    "link": "/86"
+                },
+                {
+                    "number": 87,
+                    "name": "الأعلى",
+                    "englishName": "Al-Ala",
+                    "link": "/87"
+                },
+                {
+                    "number": 88,
+                    "name": "الغاشية",
+                    "englishName": "Al-Ghashiyah",
+                    "link": "/88"
+                },
+                {
+                    "number": 89,
+                    "name": "الفجر",
+                    "englishName": "Al-Fajr",
+                    "link": "/89"
+                },
+                {
+                    "number": 90,
+                    "name": "البلد",
+                    "englishName": "Al-Balad",
+                    "link": "/90"
+                },
+                {
+                    "number": 91,
+                    "name": "الشمس",
+                    "englishName": "Ash-Shams",
+                    "link": "/91"
+                },
+                {
+                    "number": 92,
+                    "name": "الليل",
+                    "englishName": "Al-Layl",
+                    "link": "/92"
+                },
+                {
+                    "number": 93,
+                    "name": "الضحى",
+                    "englishName": "Ad-Duha",
+                    "link": "/93"
+                },
+                {
+                    "number": 94,
+                    "name": "الشرح",
+                    "englishName": "Ash-Sharh",
+                    "link": "/94"
+                },
+                {
+                    "number": 95,
+                    "name": "التين",
+                    "englishName": "At-Tin",
+                    "link": "/95"
+                },
+                {
+                    "number": 96,
+                    "name": "العلق",
+                    "englishName": "Al-Alaq",
+                    "link": "/96"
+                },
+                {
+                    "number": 97,
+                    "name": "القدر",
+                    "englishName": "Al-Qadr",
+                    "link": "/97"
+                },
+                {
+                    "number": 98,
+                    "name": "البينة",
+                    "englishName": "Al-Bayyina",
+                    "link": "/98"
+                },
+                {
+                    "number": 99,
+                    "name": "الزلزلة",
+                    "englishName": "Az-Zalzalah",
+                    "link": "/99"
+                },
+                {
+                    "number": 100,
+                    "name": "العاديات",
+                    "englishName": "Al-Adiyat",
+                    "link": "/100"
+                },
+                {
+                    "number": 101,
+                    "name": "القارعة",
+                    "englishName": "Al-Qaria",
+                    "link": "/101"
+                },
+                {
+                    "number": 102,
+                    "name": "التكاثر",
+                    "englishName": "At-Takathur",
+                    "link": "/102"
+                },
+                {
+                    "number": 103,
+                    "name": "العصر",
+                    "englishName": "Al-Asr",
+                    "link": "/103"
+                },
+                {
+                    "number": 104,
+                    "name": "الهمزة",
+                    "englishName": "Al-Humazah",
+                    "link": "/104"
+                },
+                {
+                    "number": 105,
+                    "name": "الفيل",
+                    "englishName": "Al-Fil",
+                    "link": "/105"
+                },
+                {
+                    "number": 106,
+                    "name": "قريش",
+                    "englishName": "Quraish",
+                    "link": "/106"
+                },
+                {
+                    "number": 107,
+                    "name": "الماعون",
+                    "englishName": "Al-Maun",
+                    "link": "/107"
+                },
+                {
+                    "number": 108,
+                    "name": "الكوثر",
+                    "englishName": "Al-Kawthar",
+                    "link": "/108"
+                },
+                {
+                    "number": 109,
+                    "name": "الكافرون",
+                    "englishName": "Al-Kafiroon",
+                    "link": "/109"
+                },
+                {
+                    "number": 110,
+                    "name": "النصر",
+                    "englishName": "An-Nasr",
+                    "link": "/110"
+                },
+                {
+                    "number": 111,
+                    "name": "المسد",
+                    "englishName": "Al-Masad",
+                    "link": "/111"
+                },
+                {
+                    "number": 112,
+                    "name": "الإخلاص",
+                    "englishName": "Al-Ikhlas",
+                    "link": "/112"
+                },
+                {
+                    "number": 113,
+                    "name": "الفلق",
+                    "englishName": "Al-Falaq",
+                    "link": "/113"
+                },
+                {
+                    "number": 114,
+                    "name": "الناس",
+                    "englishName": "An-Nas",
+                    "link": "/114"
+                }
+            ],
+            "tafser":[
+
+            ],
+            "mushaf":[
+                
+            ]
+            
+    
+        }
+    }
+]
