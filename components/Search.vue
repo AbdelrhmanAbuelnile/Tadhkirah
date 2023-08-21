@@ -4,7 +4,7 @@
             @input="getSearchResults"
             v-model="searchQuery"
             type="text"
-            placeholder="Search for surah"
+            placeholder="بحث عن سورة"
             class="px-5 placeholder-slate-100 text-lg text-slate-900 outline-none
                 shadow-Grayish-Blue shadow-sm max-w-1/4 w-[200px] md:max-w-2/4 md:w-[300px] rounded-md
                 bg-Dark-Grayish-Blue focus:placeholder-slate-900

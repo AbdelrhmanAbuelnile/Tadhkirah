@@ -15,7 +15,7 @@
 import { onMounted, ref } from 'vue';
 import axios from 'axios';
     
-let {  number } = useRoute().params 
+let {  number, name } = useRoute().params 
 
 const uri = `https://quranenc.com/api/v1/translation/sura/arabic_moyassar/${number}`
 
@@ -32,7 +32,7 @@ const getSurhAyaht = () => {
 
 
 useHead({
-  title: 'Tadhkirah | tafser ' + number
+  title: 'تَذْكِرَة | تفسير ' + number
 })
 onMounted(getSurhAyaht)
 </script>

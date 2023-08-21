@@ -1,4 +1,7 @@
 <template>
+    <head>
+        <title>تَذْكِرَة | حديث {{ hadithes.name }}</title>
+    </head>
     <div class="w-full bg-mushafBg flex flex-col flex-1 items-center justify-center gap-4 p-4">
         <p class="text-blue-500 text-4xl font-bold mb-5">{{ hadithes.name }}</p>
         <div
@@ -28,9 +31,7 @@ const getHadith = () => {
         hadithes.value = hadithArray
     })
 }
-// v-for="h in hadithes.items"
-// h.arab
-// hadithes.name
+
 onMounted(getHadith)
 </script>
 

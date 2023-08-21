@@ -6,7 +6,7 @@
 
 <script setup>
 useHead({
-    title: "Tadhkirah | Random Ayah"
+    title: " تَذْكِرَة | أية عشوائية"
 })
 </script>
 

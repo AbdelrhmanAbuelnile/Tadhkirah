@@ -24,6 +24,9 @@ let { zekrId } = useRoute().params
 let azkar = ref('')
 azkar.value = data[zekrId].array
 
+useHead({
+  title: `تَذْكِرَة | ${data[zekrId].category}`
+})
 </script>
 
 <style scoped>

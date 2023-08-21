@@ -1,4 +1,7 @@
 <template>
+  <head>
+    <title>تَذْكِرَة | {{surahName}}</title>
+  </head>
     <div class="flex flex-col justify-center items-center mx-auto lg:w-2/4 pt-8 px-4">
       <p class="text-center text-4xl font-semibold mb-5 text-red-600">{{ surahName }}</p>
 
@@ -28,7 +31,7 @@ console.log(surahNumber.value.typeof)
 
 const uri = `https://api.alquran.cloud/v1/surah/${number}/ar.alafasy`
 
-const surahName = ref('')
+let surahName = ref('')
 const ayahs = ref([])
 
 const getSurhAyaht = () => {
@@ -41,9 +44,5 @@ const getSurhAyaht = () => {
   })
 }
 
-
-useHead({
-  title: 'Tadhkirah | surah ' + number
-})
 onMounted(getSurhAyaht)
 </script>

@@ -24,6 +24,9 @@ const getHadith = () =>{
 }
 
 onMounted(getHadith)
+useHead({
+  title: 'تَذْكِرَة | حديث'
+})
 </script>
 
 <style scoped>

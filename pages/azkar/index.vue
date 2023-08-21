@@ -14,6 +14,10 @@ import data from '../../data/adhkar.json';
 
 let zekr = ref('')
 zekr.value = data
+
+useHead({
+  title: 'تَذْكِرَة | أذكار'
+})
 </script>
 
 <style scoped>
