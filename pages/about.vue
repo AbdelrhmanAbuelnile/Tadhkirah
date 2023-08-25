@@ -1,4 +1,5 @@
 <template>
+    <VitePwaManifest />
     <div class="min-h-screen">
         <h1 class="text-4xl text-center text-Dark-Blue my-5 font-bold">
             About this project

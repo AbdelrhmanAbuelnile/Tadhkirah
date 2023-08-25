@@ -1,4 +1,5 @@
 <template>
+  <VitePwaManifest />
   <head>
     <title>تَذْكِرَة | الفهرس</title>
   </head>

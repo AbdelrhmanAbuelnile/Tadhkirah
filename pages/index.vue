@@ -1,4 +1,5 @@
 <template>
+    <VitePwaManifest />
     <div class="bg-mushafBg mx-auto p-4 w-full flex flex-col lg:flex-row justify-between items-center gap-4 mt-10">
       
         <div class="bg-Dark-Grayish-Blue rounded-md w-3/4 md:max-w-1/3 md:w-[500px] text-center text-slate-100 text-2xl font-semibold py-4 shadow-lg shadow-Grayish-Blue flex flex-col justify-center items-center hover:bg-Grayish-Blue duration-300 cursor-pointer">

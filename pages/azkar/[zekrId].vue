@@ -1,4 +1,5 @@
 <template>
+    <VitePwaManifest />
     <div class="w-full bg-mushafBg flex flex-col flex-1 items-center justify-center gap-4 p-4">
         <p class="text-blue-500 text-4xl font-bold mb-5">{{ data[zekrId].category }}</p>
         <div

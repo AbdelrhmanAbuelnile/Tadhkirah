@@ -1,4 +1,5 @@
 <template>
+    <VitePwaManifest />
     <div class="h-screen flex flex-col justify-center items-center">
         <RandomAyah />
     </div>
