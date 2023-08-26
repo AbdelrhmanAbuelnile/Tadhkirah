@@ -1,7 +1,7 @@
 <template>
     <VitePwaManifest />
     <div class="flex flex-col justify-center items-center mx-auto lg:w-3/4 pt-8 px-4">  
-        <p class="text-blue-600 text-4xl font-semibold mb-5"> انتبه! <span class="text-red-600">الاحمر</span> هو التفسير</p>
+        <p class="text-Dark-Grayish-Blue text-4xl font-semibold mb-5"><span class="text-red-600">الاحمر</span> هو التفسير </p>
         <div class="text-2xl text-center font-medium py-4 flex flex-col items-center justify-center gap-4" v-for="ayah in ayahs" :key="ayah.number">
 
             <p class="flex flex-col gap-1 items-center ">{{ ayah.arabic_text }} <span class="text-blue-600">{{ ayah.aya }}</span></p> 

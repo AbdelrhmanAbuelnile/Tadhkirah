@@ -11,6 +11,7 @@ module.exports = {
         'Neon-Green': 'hsl(150, 100%, 66%)',
         'Grayish-Blue': 'hsl(217, 19%, 38%)',
         'Dark-Grayish-Blue': 'hsl(217, 19%, 24%)',
+        'Very-Dark': 'hsl(220, 16%, 11%)',
         'Dark-Blue': 'hsl(218, 23%, 16%)',
       },
       fontSize:{

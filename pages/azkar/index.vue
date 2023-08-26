@@ -11,10 +11,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import data from '../../data/adhkar.json';
+import azkar from '../../data/adhkar.json';
 
 let zekr = ref('')
-zekr.value = data
+zekr.value = azkar
 
 useHead({
   title: 'تَذْكِرَة | أذكار'
