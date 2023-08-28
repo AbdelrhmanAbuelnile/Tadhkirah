@@ -70,12 +70,5 @@
         searchQuery.value = "";
         searchResults.value = [];
     };
-    onMounted(() => {
-        document.addEventListener("click", (event) => {
-            if (!event.target.closest(".search-container")) {
-                showResults.value = false;
-            }
-        });
-    });
 </script>
 

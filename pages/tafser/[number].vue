@@ -16,7 +16,7 @@
 import { onMounted, ref } from 'vue';
 import axios from 'axios';
     
-let {  number, name } = useRoute().params 
+let {  number } = useRoute().params 
 
 const uri = `https://quranenc.com/api/v1/translation/sura/arabic_moyassar/${number}`
 
@@ -36,4 +36,14 @@ useHead({
   title: 'تَذْكِرَة | تفسير ' + number
 })
 onMounted(getSurhAyaht)
+useSeoMeta({
+  description: "موقع تذكرة - تطبيق ويب شامل يحتوي على القرآن الكريم، الحديث الشريف، التفسير، والأذكار في مكان واحد.",
+  ogTitle: 'تذكرة - مرجعك للموارد الإسلامية',
+  ogDescription: "استمتع بسهولة الوصول إلى القرآن الكريم، الحديث الشريف، التفسير، والأذكار عبر تطبيق ويب تذكرة.",
+  ogImage: '/favicon.ico',
+  ogUrl: `https://tadhkirah.vercel.app/tafser/${number}`,
+  twitterTitle: 'تذكرة - مصدرك للموارد الإسلامية',
+  twitterDescription: "اكتشف متعة الوصول السهل إلى القرآن الكريم، الحديث الشريف، التفسير، والأذكار عبر تطبيق ويب تذكرة.",
+  twitterImage: '/favicon.ico',
+})
 </script>

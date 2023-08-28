@@ -14,8 +14,7 @@
 
 <script setup>
     import { onMounted, ref } from 'vue';
-    import axios from 'axios';
-    
+    import quran from '../data/quran.json'
 
     const surahName = ref('')
     const ayahNo = ref(null)
@@ -26,24 +25,17 @@
     
     
     const fetchAyah = () => {
-        axios.get("https://api.alquran.cloud/v1/quran/quran-uthmani")
-        .then(res => {
-            const randomSurah = Math.floor(Math.random() * 114) + 1;
-            let surah = res.data.data.surahs[randomSurah]
-            
-            surahName.value = surah.name
-            ayatNo.value = surah.ayahs.length
-            const randomNumberOfAyah = Math.floor(Math.random() * ayatNo.value) + 1 ;
-            ayah.value = surah.ayahs[randomNumberOfAyah].text
+        const randomSurah = Math.floor(Math.random() * 114) + 1;
+        let surah = quran.data.surahs[randomSurah]
+        
+        surahName.value = surah.name
+        ayatNo.value = surah.ayahs.length
+        const randomNumberOfAyah = Math.floor(Math.random() * ayatNo.value) + 1 ;
+        ayah.value = surah.ayahs[randomNumberOfAyah].text
 
-            ayahNo.value = surah.ayahs[randomNumberOfAyah].numberInSurah
-
-        })
-
-
+        ayahNo.value = surah.ayahs[randomNumberOfAyah].numberInSurah
     }
-
-    onMounted(fetchAyah)
+    fetchAyah()
 </script>
 
 <style scoped>
