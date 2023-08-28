@@ -11,7 +11,7 @@
                 focus:bg-Neon-Green truncate text-center"
         >
 
-        <div class="absolute flex flex-col bg-Dark-Grayish-Blue text-slate-900 max-w-1/4 w-[200px] md:max-w-2/4 md:w-[300px] shadow-Dark-Grayish-Blue shadow-lg top-[45px] rounded-md overflow-hidden">
+        <div class="absolute flex flex-col bg-Dark-Grayish-Blue text-slate-900 max-w-1/4 w-[200px] md:max-w-2/4 md:w-[300px] shadow-Dark-Grayish-Blue shadow-lg top-[45px] rounded-md overflow-hidden z-20">
                 <NuxtLink
                 :to="s.link"
                 @click="clearSearchResults"
@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-    import { ref, onMounted } from 'vue'
+    import { ref } from 'vue'
     import data from '../data/data.json'
     const surahs = data[0].data.surahs
     const searchQuery = ref("");

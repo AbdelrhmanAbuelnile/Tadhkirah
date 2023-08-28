@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       ],
       nitro: {
         prerender: {
-          routes: ['/', '/fehrs', '/hadith', '/azkar', '/tafser','randomAyah'],
+          routes: ['/', '/fehrs', '/hadith', '/azkar', '/tafser','randomAyah','/hadith/bukhari','/hadith/muslim','/azkar/0'],
         },
       },
       pwa: {

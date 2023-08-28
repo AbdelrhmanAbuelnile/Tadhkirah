@@ -14,7 +14,7 @@
                 <button @click="show = !show" class="md:hidden bg-Neon-Green px-2 py-1 rounded-sm flex justify-center text-Dark-Blue">
                     <Icon name="ic:sharp-menu" class="text-xl"/>
                 </button>
-                <div v-if="show" class="absolute left-0 z-10 top-[60px] min-h-screen h-full bg-Dark-Grayish-Blue w-full text-slate-100 text-2xl pt-2 font-semibold">
+                <div v-if="show" class="absolute left-0 z-10 top-[60px] h-screen overflow-y-hidden bg-Dark-Grayish-Blue w-full text-slate-100 text-2xl py-2 font-semibold">
                     <ul class="flex flex-col justify-center items-start px-4 gap-8">
                         <li>
                             <NuxtLink @click="show = !show" to="/" class="hover:text-[#23cfa1] duration-300">الرئيسية</NuxtLink>
@@ -46,7 +46,7 @@
 
         
         <!-- output the page content -->
-        <div class="w-full min-h-screen h-full bg-mushafBg">
+        <div class="w-full min-h-screen h-full bg-mushafBg" v-if="!show">
             <slot />
         </div>
     </div>
