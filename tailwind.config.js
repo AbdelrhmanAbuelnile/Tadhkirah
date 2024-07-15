@@ -16,6 +16,9 @@ module.exports = {
       },
       fontSize:{
         '2.5xl':'28px'
+      },
+      fontFamily:{
+        "amiri": ['Amiri', 'serif'],
       }
     },
   },

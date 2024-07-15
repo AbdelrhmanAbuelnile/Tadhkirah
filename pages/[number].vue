@@ -3,26 +3,28 @@
   <!-- <head>
     <title>تَذْكِرَة | {{surahName}}</title>
   </head> -->
-  <div class="flex flex-col justify-center items-center lg:justify-end lg:items-end lg:w-full pt-8 px-4">
+  <div class="flex flex-col justify-center items-center lg:w-full pt-8 px-4 gap-10">
     <p class="text-center text-4xl font-semibold mb-5 text-red-600">
       {{ surahName }}
     </p>
 
-    <span class="my-4 lg:my-10">
+    <span class="">
       <audio controls="controls" preload="true" class="bottom-0 sticky">
         <source id="activeAyah" :src="`https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${number}.mp3`"
           type="audio/mp3" />
       </audio>
     </span>
-    <div>
+    <div class="flex flex-col justify-center items-center text-2xl w-4/5 p-2">
 
-      <p>
-        <template v-for="ayah in ayahs">
+      <p class="text-3xl lg:text-4xl text-slate-600 mb-20">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+
+      <p class="text-center  leading-[3.2rem]">
+        <span v-for="ayah in ayahs" >
           {{ organizeFirstAyah(ayah.text) }}
-          <span class="text-center text-red-500">
-            ({{ convertToArabic(ayah.numberInSurah) }})
+          <span class="text-center text-red-500 my-2">
+            ﴿{{ convertToArabic(ayah.numberInSurah) }}﴾
           </span>
-        </template>
+        </span>
       </p>
     </div>
   </div>
