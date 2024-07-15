@@ -11,8 +11,8 @@
       <div
         class="flex flex-row-reverse justify-between items-center text-center max-w-[150px] lg:max-w-[220px] w-full"
       >
-        <p class="font-bold">{{ s.number }}</p>
-        <p class="text-center">{{ s.ayahs.length }}</p>
+        <p class="font-bold">{{ convertToArabic(s.number) }}</p>
+        <p class="text-center">{{ convertToArabic(s.ayahs.length) }}</p>
         <img
           src="../assets/imgs/Medinan.png"
           alt="Medinan Icon"
@@ -38,6 +38,11 @@ const surahName = ref("");
 
 let surahArray = quran.data;
 surahName.value = surahArray.surahs;
+
+function convertToArabic(number) {
+  const arabicNumbers = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+  return number.toString().split('').map(digit => arabicNumbers[parseInt(digit, 10)]).join('');
+}
 
 useHead({
   title: "تَذْكِرَة | الفهرس",

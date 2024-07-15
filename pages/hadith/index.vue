@@ -4,7 +4,7 @@
 
       <NuxtLink :to="`hadith/${n.slug}`" v-for="n in rawy" :key="n.total" class="card text-lg text-center w-full flex flex-row-reverse justify-between items-center px-4 lg:px-16 text-slate-200 bg-Dark-Grayish-Blue hover:bg-[#545c6b] hover:text-[#23cfa1] duration-300 ">
         <p class="font-bold text-center">{{ n.name }}</p>
-        <p class="font-bold text-center">عدد الأحاديث: {{ n.total }}</p>
+        <p class="font-bold text-center">عدد الأحاديث: {{ convertToArabic(n.total) }}</p>
       </NuxtLink>
 
     </div>
@@ -16,6 +16,11 @@ import hadith from '../../data/hadith.json';
 
 let rawy = ref('')
 rawy.value = hadith
+
+function convertToArabic(number) {
+  const arabicNumbers = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+  return number.toString().split('').map(digit => arabicNumbers[parseInt(digit, 10)]).join('');
+}
 
 useHead({
   title: 'تَذْكِرَة | حديث'
