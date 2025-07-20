@@ -1,6 +1,6 @@
 <template>
     <VitePwaManifest />
-    <div class="font-amiri">
+    <div class="font-amiri" dir="rtl">
         <header class=" shadow-sm bg-Dark-Blue">
             <nav class=" container mx-auto p-4 flex justify-between">
                 <NuxtLink to="/" class="font-semibold text-slate-100 hover:text-[#23cfa1] duration-300"> تَذْكِرَة
