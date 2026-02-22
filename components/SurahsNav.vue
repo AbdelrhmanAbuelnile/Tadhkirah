@@ -12,6 +12,13 @@
         السورة التالية
       </NuxtLink>
       <div v-else class="flex-1 lg:flex-none"></div>
+      <button
+        v-if="bookmark"
+        @click="goToBookmark"
+        class="flex-none px-3 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors duration-200 text-sm font-semibold"
+      >
+        🔖 الإشارة المرجعية
+      </button>
       <NuxtLink
         v-if="surahNumber > 1"
         :to="`/${surahNumber - 1}`"
@@ -30,6 +37,21 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const { number } = useRoute().params;
 const surahNumber = parseInt(number, 10);
 
+const { bookmark, loadBookmark } = useBookmark();
+
+const router = useRouter();
+
+const goToBookmark = () => {
+  if (!bookmark.value) return;
+  const { surahId, ayahId } = bookmark.value;
+  if (surahNumber === surahId) {
+    const el = document.getElementById(`ayah-${ayahId}`);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } else {
+    router.push({ path: `/${surahId}`, hash: `#ayah-${ayahId}` });
+  }
+};
+
 const SCROLL_THRESHOLD = 50;
 const isVisible = ref(true);
 let lastScrollY = 0;
@@ -41,6 +63,7 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
+  loadBookmark();
   lastScrollY = window.scrollY;
   window.addEventListener('scroll', handleScroll, { passive: true });
 });

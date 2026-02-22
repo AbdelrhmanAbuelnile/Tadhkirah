@@ -19,9 +19,14 @@
       <p class="text-3xl lg:text-4xl text-slate-600 mb-20">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
 
       <p class="text-center  leading-[3.2rem]">
-        <span v-for="ayah in ayahs" >
+        <span v-for="ayah in ayahs" :id="`ayah-${ayah.numberInSurah}`">
           {{ organizeFirstAyah(ayah.text) }}
-          <span class="text-center text-red-500 my-2">
+          <span
+            class="text-center my-2 cursor-pointer select-none"
+            :class="isBookmarked(surahNumber, ayah.numberInSurah) ? 'text-amber-500' : 'text-red-500'"
+            :title="isBookmarked(surahNumber, ayah.numberInSurah) ? 'إزالة الإشارة المرجعية' : 'إضافة إشارة مرجعية'"
+            @click="toggleBookmark(surahNumber, ayah.numberInSurah)"
+          >
             ﴿{{ convertToArabic(ayah.numberInSurah) }}﴾
           </span>
         </span>
@@ -32,10 +37,25 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, nextTick } from "vue";
 import surah from "../data/quran.json";
 
-let { number } = useRoute().params;
+const route = useRoute();
+let { number } = route.params;
+const surahNumber = parseInt(number, 10);
+
+const { bookmark, loadBookmark, toggleBookmark, isBookmarked } = useBookmark();
+
+onMounted(() => {
+  loadBookmark();
+  if (route.hash) {
+    const id = route.hash.slice(1);
+    nextTick(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  }
+});
 
 /**
  * ⚠ This function is a workaround for the issue of the first ayah of each surah
