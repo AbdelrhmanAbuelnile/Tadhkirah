@@ -7,7 +7,7 @@
       <NuxtLink
         v-if="surahNumber < 114"
         :to="`/${surahNumber + 1}`"
-        class="flex-1 lg:flex-none lg:px-8 text-center py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors duration-200"
+        class="flex-1 lg:flex-none lg:px-8 text-center py-2 bg-Neon-Green text-Dark-Blue font-semibold rounded-lg hover:opacity-90 transition-opacity duration-200"
       >
         السورة التالية
       </NuxtLink>
