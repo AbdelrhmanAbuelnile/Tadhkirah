@@ -3,7 +3,7 @@
   <!-- <head>
     <title>تَذْكِرَة | {{surahName}}</title>
   </head> -->
-  <div class="flex flex-col justify-center items-center lg:w-full pt-8 px-4 gap-10">
+  <div class="flex flex-col justify-center items-center lg:w-full pt-8 px-4 gap-10 pb-20">
     <p class="text-center text-4xl font-semibold mb-5 text-red-600">
       {{ surahName }}
     </p>
@@ -28,6 +28,7 @@
       </p>
     </div>
   </div>
+  <SurahsNav />
 </template>
 
 <script setup>
