@@ -10,7 +10,7 @@
 
     <span class="">
       <audio controls="controls" preload="true" class="bottom-0 sticky">
-        <source id="activeAyah" :src="`https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${number}.mp3`"
+        <source id="activeAyah" :src="`https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/{number}.mp3`"
           type="audio/mp3" />
       </audio>
     </span>
