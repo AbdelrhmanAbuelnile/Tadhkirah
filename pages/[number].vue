@@ -14,7 +14,7 @@
           type="audio/mp3" />
       </audio>
     </span>
-    <div class="flex flex-col justify-center items-center text-2xl w-4/5 p-2">
+    <div class="flex flex-col justify-center items-center text-2xl md:w-4/5 w-11/12 md:p-2 p-0.5">
 
       <p class="text-3xl lg:text-4xl text-slate-600 mb-20">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
 
