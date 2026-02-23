@@ -1,7 +1,10 @@
 <template>
-  <div
-    class="fixed left-0 right-0 z-50 transition-all duration-300"
-    :class="[isVisible ? 'translate-y-0' : 'translate-y-full', playerState.isActive ? 'bottom-28' : 'bottom-0']"
+	<div
+		class="fixed left-0 right-0 z-50 transition-all duration-300"
+		:class="[
+			isVisible ? 'translate-y-0' : 'translate-y-full',
+			playerState.isActive ? 'bottom-[7.5rem]' : 'bottom-0',
+		]"
 	>
 		<div
 			class="flex justify-between gap-2 bg-white/95 backdrop-blur-sm shadow-lg px-4 py-3 w-full lg:max-w-lg lg:mx-auto"

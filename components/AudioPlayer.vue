@@ -19,7 +19,7 @@
 					@click="isExpanded = !isExpanded"
 				>
 					<svg
-						class="w-5 h-5 transition-transform duration-200"
+						class="w-6 h-6 transition-transform duration-200"
 						:class="{ 'rotate-180': isExpanded }"
 						fill="none"
 						stroke="currentColor"
@@ -38,7 +38,7 @@
 					@click="handleClose"
 					title="إغلاق المشغل"
 				>
-					<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
 						<path
 							d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
 						/>
@@ -84,8 +84,8 @@
 							@click="previousSurah"
 						>
 							<svg
-								width="24"
-								height="24"
+								width="28"
+								height="28"
 								viewBox="0 0 24 24"
 								fill="currentColor"
 								xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +95,23 @@
 							</svg>
 						</button>
 
+						<!-- Skip Backward 10s -->
+						<button
+							class="text-gray-600 hover:text-gray-800 transition-colors p-2 relative"
+							@click="skipBackward"
+							title="-10 ثوانٍ"
+						>
+							<svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+								<path
+									d="M12.5 8c-2.65 0-5.05 1.04-6.83 2.73L3.5 8.5v7h7l-2.54-2.54C9.49 11.58 10.9 11 12.5 11c3.03 0 5.57 2.1 6.27 4.92l1.93-.53C19.78 11.84 16.45 8 12.5 8z"
+								/>
+							</svg>
+							<span
+								class="absolute text-[9px] font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%]"
+								>10</span
+							>
+						</button>
+
 						<!-- Play/Pause -->
 						<button
 							class="text-white p-4 rounded-full bg-emerald-500 shadow-lg hover:bg-emerald-600 transition-all transform hover:scale-105"
@@ -102,7 +119,7 @@
 						>
 							<svg
 								v-if="!isPlaying"
-								class="w-6 h-6"
+								class="w-7 h-7"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 							>
@@ -112,7 +129,7 @@
 							</svg>
 							<svg
 								v-else
-								class="w-6 h-6"
+								class="w-7 h-7"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 							>
@@ -120,6 +137,23 @@
 									d="M5.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75A.75.75 0 007.25 3h-1.5zM12.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75a.75.75 0 00-.75-.75h-1.5z"
 								/>
 							</svg>
+						</button>
+
+						<!-- Skip Forward 10s -->
+						<button
+							class="text-gray-600 hover:text-gray-800 transition-colors p-2 relative"
+							@click="skipForward"
+							title="+10 ثوانٍ"
+						>
+							<svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+								<path
+									d="M11.5 8c2.65 0 5.05 1.04 6.83 2.73L20.5 8.5v7h-7l2.54-2.54C14.51 11.58 13.1 11 11.5 11c-3.03 0-5.57 2.1-6.27 4.92l-1.93-.53C4.22 11.84 7.55 8 11.5 8z"
+								/>
+							</svg>
+							<span
+								class="absolute text-[9px] font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%]"
+								>10</span
+							>
 						</button>
 
 						<!-- Next -->
@@ -132,8 +166,8 @@
 							@click="nextSurah"
 						>
 							<svg
-								width="24"
-								height="24"
+								width="28"
+								height="28"
 								viewBox="0 0 24 24"
 								fill="currentColor"
 								xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +187,7 @@
 							"
 							@click="toggleRepeat"
 						>
-							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
 								<path
 									d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 110 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
 								/>
@@ -170,7 +204,7 @@
 							<!-- Muted icon -->
 							<svg
 								v-if="isMuted || volume === 0"
-								class="w-5 h-5"
+								class="w-6 h-6"
 								fill="currentColor"
 								viewBox="0 0 24 24"
 							>
@@ -184,7 +218,7 @@
 							<!-- Low volume icon -->
 							<svg
 								v-else-if="volume < 0.5"
-								class="w-5 h-5"
+								class="w-6 h-6"
 								fill="currentColor"
 								viewBox="0 0 24 24"
 							>
@@ -195,7 +229,7 @@
 							<!-- High volume icon -->
 							<svg
 								v-else
-								class="w-5 h-5"
+								class="w-6 h-6"
 								fill="currentColor"
 								viewBox="0 0 24 24"
 							>
@@ -204,15 +238,19 @@
 								/>
 							</svg>
 						</button>
-						<input
-							type="range"
-							min="0"
-							max="1"
-							step="0.01"
-							:value="isMuted ? 0 : volume"
-							@input="onVolumeChange"
-							class="w-full h-1 bg-gray-200 rounded-full appearance-none cursor-pointer accent-emerald-500"
-						/>
+						<div
+							class="relative w-full h-2 bg-gray-200 rounded-full cursor-pointer group"
+							@click="onVolumeBarClick($event)"
+						>
+							<div
+								class="h-full bg-emerald-500 rounded-full relative"
+								:style="`width: ${(isMuted ? 0 : volume) * 100}%`"
+							>
+								<span
+									class="w-3.5 h-3.5 bg-emerald-600 absolute -right-1.5 -top-[3px] rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
+								></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -235,9 +273,21 @@
 						}"
 						@click="previousSurah"
 					>
-						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
 							<rect x="4" y="5" width="2" height="14" />
 							<polygon points="20,5 8,12 20,19" />
+						</svg>
+					</button>
+
+					<button
+						class="text-gray-600 hover:text-gray-800 transition-colors p-1 relative"
+						@click="skipBackward"
+						title="-10 ثوان"
+					>
+						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+							<path
+								d="M12.5 8c-2.65 0-5.05 1.04-6.83 2.73L3.5 8.5v7h7l-2.54-2.54C9.49 11.58 10.9 11 12.5 11c3.03 0 5.57 2.1 6.27 4.92l1.93-.53C19.78 11.84 16.45 8 12.5 8z"
+							/>
 						</svg>
 					</button>
 
@@ -247,7 +297,7 @@
 					>
 						<svg
 							v-if="!isPlaying"
-							class="w-4 h-4"
+							class="w-5 h-5"
 							fill="currentColor"
 							viewBox="0 0 20 20"
 						>
@@ -255,9 +305,21 @@
 								d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
 							/>
 						</svg>
-						<svg v-else class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+						<svg v-else class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
 							<path
 								d="M5.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75A.75.75 0 007.25 3h-1.5zM12.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75a.75.75 0 00-.75-.75h-1.5z"
+							/>
+						</svg>
+					</button>
+
+					<button
+						class="text-gray-600 hover:text-gray-800 transition-colors p-1 relative"
+						@click="skipForward"
+						title="+10 ثوان"
+					>
+						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+							<path
+								d="M11.5 8c2.65 0 5.05 1.04 6.83 2.73L20.5 8.5v7h-7l2.54-2.54C14.51 11.58 13.1 11 11.5 11c-3.03 0-5.57 2.1-6.27 4.92l-1.93-.53C4.22 11.84 7.55 8 11.5 8z"
 							/>
 						</svg>
 					</button>
@@ -270,7 +332,7 @@
 						}"
 						@click="nextSurah"
 					>
-						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
 							<polygon points="4,5 16,12 4,19" />
 							<rect x="18" y="5" width="2" height="14" />
 						</svg>
@@ -285,7 +347,7 @@
 					>
 						<svg
 							v-if="isMuted || volume === 0"
-							class="w-4 h-4"
+							class="w-5 h-5"
 							fill="currentColor"
 							viewBox="0 0 24 24"
 						>
@@ -298,7 +360,7 @@
 						</svg>
 						<svg
 							v-else-if="volume < 0.5"
-							class="w-4 h-4"
+							class="w-5 h-5"
 							fill="currentColor"
 							viewBox="0 0 24 24"
 						>
@@ -306,21 +368,25 @@
 								d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM15.932 7.757a.75.75 0 011.061 0 6 6 0 010 8.486.75.75 0 01-1.06-1.061 4.5 4.5 0 000-6.364.75.75 0 010-1.06z"
 							/>
 						</svg>
-						<svg v-else class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+						<svg v-else class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
 							<path
 								d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM18.584 5.106a.75.75 0 011.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 01-1.06-1.06 8.25 8.25 0 000-11.668.75.75 0 010-1.06zM15.932 7.757a.75.75 0 011.061 0 6 6 0 010 8.486.75.75 0 01-1.06-1.061 4.5 4.5 0 000-6.364.75.75 0 010-1.06z"
 							/>
 						</svg>
 					</button>
-					<input
-						type="range"
-						min="0"
-						max="1"
-						step="0.01"
-						:value="isMuted ? 0 : volume"
-						@input="onVolumeChange"
-						class="w-16 h-1 bg-gray-200 rounded-full appearance-none cursor-pointer accent-emerald-500"
-					/>
+					<div
+						class="relative w-20 h-1.5 bg-gray-200 rounded-full cursor-pointer group"
+						@click="onVolumeBarClick($event)"
+					>
+						<div
+							class="h-full bg-emerald-500 rounded-full relative"
+							:style="`width: ${(isMuted ? 0 : volume) * 100}%`"
+						>
+							<span
+								class="w-3 h-3 bg-emerald-600 absolute -right-1 -top-[3px] rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
+							></span>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -423,8 +489,28 @@ const toggleRepeat = () => {
 	isRepeating.value = !isRepeating.value;
 };
 
-const onVolumeChange = (event) => {
-	const newVolume = parseFloat(event.target.value);
+const skipForward = () => {
+	if (audioPlayer.value) {
+		audioPlayer.value.currentTime = Math.min(
+			audioPlayer.value.currentTime + 10,
+			audioPlayer.value.duration || 0,
+		);
+	}
+};
+
+const skipBackward = () => {
+	if (audioPlayer.value) {
+		audioPlayer.value.currentTime = Math.max(
+			audioPlayer.value.currentTime - 10,
+			0,
+		);
+	}
+};
+
+const onVolumeBarClick = (event) => {
+	const rect = event.currentTarget.getBoundingClientRect();
+	const x = event.clientX - rect.left;
+	const newVolume = Math.max(0, Math.min(1, x / rect.width));
 	volume.value = newVolume;
 	isMuted.value = newVolume === 0;
 	if (audioPlayer.value) {
