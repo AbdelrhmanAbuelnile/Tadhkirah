@@ -64,9 +64,13 @@
         <div class="w-full min-h-screen h-full bg-mushafBg" v-if="!show">
             <slot />
         </div>
+
+        <!-- Global persistent audio player -->
+        <AudioPlayer />
     </div>
 </template>
 <script setup>
+
 import { ref } from 'vue'
 let show = ref(false)
 useHead({
