@@ -27,7 +27,7 @@ let { slug } = useRoute().params
 
 const LoadMore = () => {
   limit.value += 20
-  let uri = `https://hadis-api-id.vercel.app/hadith/${slug}?page=1&limit=${limit.value}`
+  let uri = `https://hadith-eosin.vercel.app/hadith/${slug}?page=1&limit=${limit.value}`
   getHadith(uri)
 }
 
