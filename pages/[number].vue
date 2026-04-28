@@ -60,7 +60,7 @@
 
 <script setup>
 import { ref, onMounted, nextTick } from "vue";
-import surah from "../data/quran.json";
+import surah from "../data/QuranV2.json";
 
 const route = useRoute();
 let { number } = route.params;
@@ -99,7 +99,7 @@ const organizeFirstAyah = (text) => {
 let surahName = ref("");
 const ayahs = ref([]);
 
-let surahArray = surah.data.surahs[number - 1];
+let surahArray = surah[number - 1];
 
 surahName.value = surahArray.name;
 
